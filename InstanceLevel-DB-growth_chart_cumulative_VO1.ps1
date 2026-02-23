@@ -7,7 +7,7 @@ $SMTPServer = "smtp.office365.com"
 $SMTPPort   = 587
 $From       = "announcements@gmail.com"
 $To         = "bhanumurthy.msch@gmail.com"
-$SMTPUser   = "announcements@gmail.com"
+$SMTPUser   = "sourceid@gmail.com"
 $SMTPPass   = "xxxXXXxxxXXX"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -205,3 +205,4 @@ $SMTP.Credentials = New-Object System.Net.NetworkCredential($SMTPUser,$SMTPPass)
 $SMTP.Send($Mail)
 
 Write-Host "SUCCESS: DB month-end growth chart matches SQL report"
+
